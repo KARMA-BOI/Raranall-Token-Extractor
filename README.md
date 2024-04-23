@@ -7,11 +7,14 @@ A Program That Extracts The Discord Tokens From The RAR Files Blank-Grabber Crea
 ## HOW TO SETUP
 
 1. Download [The Files](FILES)
-2. Download [Python](https://www.python.org/downloads/)
+2. Download [Python](https://www.python.org/downloads/) And Make Sure To Add It To Path
 3. Run "SETUP.bat" & Wait For It To Finish
 4. Enter The Directory Path Where The RAR Files Are Located, When Prompted
 5. Enter The Password Of Your RAR Files, When Prompted
 6. A .txt File Should Be Created, Where All Extracted Tokens Are Pasted
+
+https://github.com/KARMA-BOI/RARANALL/assets/167853974/e54166f1-da64-433d-bf6e-fdaa18893036
+
 
 
 ## EDUCATIONAL PURPOSES DISCLAIMER

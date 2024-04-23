@@ -1,4 +1,4 @@
 @echo off
 
 pip install colorama
-start RARANALL.exe
+start MAIN.py

@@ -12,6 +12,10 @@ A Program That Extracts The Discord Tokens From The RAR Files Blank-Grabber Crea
 5. After The Program Finishes, It Should Create a .txt File With All The Extracted Tokens, Inside The Directory It's Ran In
 
 
+
+https://github.com/KARMA-BOI/RARANALL/assets/167853974/7228eae0-3ae6-455c-a92f-08c2c7e8ddd8
+
+
 ## EDUCATIONAL PURPOSES DISCLAIMER
 
 This repository and its contents are provided strictly for educational purposes only. Any usage of the materials within this repository for commercial or non-educational purposes is not endorsed. The information, code samples, and documentation provided here are intended solely for learning and academic exploration.

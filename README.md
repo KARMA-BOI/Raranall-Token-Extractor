@@ -3,17 +3,14 @@ A Program That Extracts The Discord Tokens From The RAR Files Blank-Grabber Crea
 
 <img src="https://camo.githubusercontent.com/eca925d3906216778c44d130e769f4a6dbd4322f0c972b804abe38181bfe804c/68747470733a2f2f666f7274686562616467652e636f6d2f696d616765732f6261646765732f6d6164652d776974682d707974686f6e2e737667" alt="forthebadge" data-canonical-src="https://forthebadge.com/images/badges/made-with-python.svg" style="max-width: 100%;"> <img src="https://camo.githubusercontent.com/9d9c487370f654b6139bb3f59f86cb190aea255ddd3253ac5742f23381aafc23/687474703a2f2f666f7274686562616467652e636f6d2f696d616765732f6261646765732f6275696c742d776974682d6c6f76652e737667" alt="forthebadge" data-canonical-src="http://forthebadge.com/images/badges/built-with-love.svg" style="max-width: 100%;">
 
+
 ## HOW TO SETUP
 
 1. Download The Files
-2. Run "RARANALL.exe"
-3. Enter The Directory Path Where The RAR Files Are Located
-4. Enter The Password Of Your RAR Files
-5. After The Program Finishes, It Should Create a .txt File With All The Extracted Tokens, Inside The Directory It's Ran In
-
-
-
-https://github.com/KARMA-BOI/RARANALL/assets/167853974/7228eae0-3ae6-455c-a92f-08c2c7e8ddd8
+2. Run "Setup.bat" & Wait For It To Finish
+3. Enter The Directory Path Where The RAR Files Are Located, When Prompted
+5. Enter The Password Of Your RAR Files, When Prompted
+6. After The Program Finishes, It Should Create a .txt File With All The Extracted Tokens, Inside The Directory It's Ran In
 
 
 ## EDUCATIONAL PURPOSES DISCLAIMER

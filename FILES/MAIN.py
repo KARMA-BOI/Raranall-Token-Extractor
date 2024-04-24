@@ -1,6 +1,4 @@
 import os
-import colorama
-from colorama import Fore, Style
 import tempfile
 import shutil
 import re
@@ -8,18 +6,22 @@ import subprocess
 import time
 import ctypes
 
-def generate_banner():
-    colorama.init()  # Initialize colorama for Windows
+GREEN = '\033[92m'
+YELLOW = '\033[93m'
+RED = '\033[91m'
+GREY = '\033[90m'
+RESET = '\033[0m'
 
-    banner = f"""
-{Fore.RED}
+def generate_banner():
+
+    banner = RED + """
 ██████╗  █████╗ ██████╗  █████╗ ███╗   ██╗ █████╗ ██╗     ██╗     
 ██╔══██╗██╔══██╗██╔══██╗██╔══██╗████╗  ██║██╔══██╗██║     ██║     
 ██████╔╝███████║██████╔╝███████║██╔██╗ ██║███████║██║     ██║     
 ██╔══██╗██╔══██║██╔══██╗██╔══██║██║╚██╗██║██╔══██║██║     ██║     
 ██║  ██║██║  ██║██║  ██║██║  ██║██║ ╚████║██║  ██║███████╗███████╗    GITHUB.COM/KARMA-BOI
 ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝╚═╝  ╚═╝╚══════╝╚══════╝    CREATED BY KARMA
-"""
+""" + RESET
 
     print(banner)
 
@@ -49,24 +51,28 @@ def extract_tokens_from_txt(file_path, extracted_tokens):
 
 def main():
     ctypes.windll.kernel32.SetConsoleTitleW("CREATED BY KARMA-BOI | RARANALL")
+    os.system('cls')
+    generate_banner()
+    input(GREY + "[>] PRESS ENTER TO START THE PROGRAM" + RESET)
+    os.system('cls')
     generate_banner()
     while True: 
-        archive_folder = input("[>] RAR FILES DIRECTORY: ")
+        archive_folder = input(GREY + "[>] RAR FILES DIRECTORY: " + RESET)
         if os.path.isdir(archive_folder):
-            print("[>] VALID DIRECTORY")
+            print(GREY + "[>] VALID DIRECTORY" + RESET)
             time.sleep(2)
             os.system('cls')
             generate_banner()
             break
         else:
-            print("[>] INVALID DIRECTORY...")
+            print(GREY + "[>] INVALID DIRECTORY..." + RESET)
             time.sleep(2)
             os.system('cls')
             generate_banner()
     os.system('cls')
     generate_banner()
-    password = input("[>] RAR FILES PASSWORD: ")
-    print("[>] VALID PASSWORD")
+    password = input(GREY + "[>] RAR FILES PASSWORD: " + RESET)
+    print(GREY + "[>] VALID PASSWORD" + RESET)
     time.sleep(2)
     os.system('cls')
     generate_banner()
@@ -78,7 +84,7 @@ def main():
     total_tokens_extracted = 0
 
 
-    print("[>] STARTING EXTRACTION PROCESS...")
+    print(GREY + "[>] STARTING EXTRACTION PROCESS" + RESET)
     time.sleep(2)
     os.system('cls')
     generate_banner()
@@ -87,25 +93,25 @@ def main():
             archive_path = os.path.join(archive_folder, filename)
             if os.path.isfile(archive_path) and (archive_path.endswith('.rar')):
                 try:
-                    print(f"[+] EXTRACTING FROM {archive_path}...")
+                    print(GREY + "[+] EXTRACTING FROM: " + RESET + f"{archive_path}")
                     total_tokens_extracted += len(tokens)
                     tokens = extract_tokens_from_rar(archive_path, password, extracted_tokens)
                     for token in tokens:
                         output_file.write(token + '\n')
                 except Exception as e:
-                    print(f"[-] ERROR EXTRACTING FROM {archive_path}: {e}")
+                    print(GREY + "[+] ERROR EXTRACTING FROM " + RESET + f"{archive_path}" + {e})
     time.sleep(2)
     os.system('cls')
     generate_banner()
-    print(f"[>] SUCCESSFULLY EXTRACTED {total_tokens_extracted} TOKENS")
+    print(GREY + f"[>] SUCCESSFULLY EXTRACTED {total_tokens_extracted} TOKENS" + RESET)
     time.sleep(2)
     os.system('cls')
     generate_banner()
-    print(f"TOKENS EXTRACTED TO: {output_file_path}")
+    print(GREY + f"[>] TOKENS EXTRACTED TO: {output_file_path}" + RESET)
     time.sleep(2)
     os.system('cls')
     generate_banner()
-    input("[>] PRESS ENTER TO CLOSE THE PROGRAM")
+    input(GREY + "[>] PRESS ENTER TO CLOSE THE PROGRAM" + RESET)
 
 if __name__ == "__main__":
     main()
